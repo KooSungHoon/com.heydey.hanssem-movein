@@ -1,0 +1,111 @@
+@charset 'utf-8';
+
+.ta_c{text-align: center;}
+.w1170{width: 1170px;margin: auto;}
+/*헤이데이*/
+/*.bg_gray{background: #f1f1f1;}*/
+
+/* 메인 */
+#top_util .top_util_inner .family_tab.mall_tab li {width: 190px;}
+#top_util .top_util_inner .family_tab.mall_tab li  img{width: 100%;}
+
+.mall_head{width: auto;height: auto;border-bottom: 1px solid #d9d9d9;}
+.mall_head h1{position: relative;width: 1170px;height: 79px; line-height: 79px;margin: auto;}
+.mall_head .noti{position: absolute;right: 0;top: 33px;font-size: 15px;color: #353535;letter-spacing: -1px;word-spacing: -2px;}
+
+.slide_node {position:relative;}
+.slide_node .slide_node_view {overflow:hidden;position:relative;}
+.slide_node .slide_node_view .slide_node_list {position:absolute;top:0;left:100%;width:100%;background-color:#fff;}
+.slide_node .slide_node_view .slide_node_list:first-child {position:relative;left:0;width:100%;}
+.slide_node .slide_node_view .slide_node_list img {width:100%;}
+/*헤이데이*/
+/*.slide_node .btn_wrap{position: absolute;left: 0;right: 0;top: 0;bottom: 0;margin: auto;width: 1170px;height: 38px;}*/
+.slide_node .btn_wrap{position: absolute;left: 0;right: 0;top: 0;bottom: 0;margin: auto;width: 65%;height: 38px;}
+.slide_node .btn_wrap a{position:absolute;font-size: 0;line-height: 0;text-indent: -999em;}
+.slide_node .slide_view_prev {left:-116px;width: 38px;height: 38px;background: url(../movein/icon_arrow.png) 13px 9px #c8c8c8 no-repeat;border-radius: 50%;}
+.slide_node .slide_view_next {right:-126px;width: 14px;height: 38px;background: url(../movein/icon_arrow.png) -87px 9px no-repeat;z-index: 1;}
+.slide_node .slide_cnt {display:block;position:absolute;bottom:0;top: 0;right:-138px;margin: auto;padding-left:16px;width: 78px;height:38px;line-height: 38px;border-radius: 20px;color:#2a2a2a;background: #e5e4e2;}
+.slide_node .slide_cnt .slide_cnt_num {font-size:14px;line-height: inherit;}
+.slide_node .slide_cnt .slide_cnt_tot {font-size:14px;line-height: inherit;}
+
+
+.module_sect.wide{width: 100%;}
+/*헤이데이*/
+/*.module_sect.my_apt{margin: 0 auto 247px;padding:47px 0 54px;height: 372px;background: #484848;}*/
+.module_sect.my_apt{margin: 0 ;padding:47px 0 54px;height: 372px;background: #484848;}
+.module_sect.my_apt .module_tit{margin: 0 auto 20px ;width: 1170px;text-align: left;}
+.module_sect.my_apt .module_tit h2{font-size: 34px;font-weight: normal;color: #fff;}
+.module_sect.my_apt ul{overflow: hidden;width: 1170px;margin: auto}
+.module_sect.my_apt li{float: left;margin: 0 6px 6px 0;width: 386px;height: 96px;background: #fff;}
+.module_sect.my_apt li:nth-child(3n){margin-right: 0;}
+.module_sect.my_apt li a{display: block;position: relative;padding: 20px 0 0 88px;font-size: 28px;line-height: 1.1;}
+/*헤이데이*/
+/*.module_sect.my_apt li a:before{content: '';position: absolute;left: 28px;top: 28px; width: 38px;height: 39px;background: url(../images/icon_building.png) 0 0 no-repeat;}*/
+.module_sect.my_apt li a:before{content: '';position: absolute;left: 28px;top: 28px; width: 38px;height: 39px;background: url("http://image2.hanssem.com/event/movein/icon_building.png") 0 0 no-repeat;}
+.module_sect.my_apt li b{display: block;}
+
+/*헤이데이 추가*/
+.module_sect.my_apt li:hover {background-color: #272727;}
+.module_sect.my_apt li a:hover  {color: #fff}
+
+
+/* 지역별 */
+#area h2{padding: 36px 0 25px;margin: auto;width:1170px;font-size: 42px;color: #2a2a2a;line-height: 42px;}
+#area h2 span{margin-left:30px;font-size: 18px;color: #636363;line-height: inherit;}
+#area .cate_wrap{padding: 16px 24px 0;border:1px solid #d9d9d9;}
+#area .cate_wrap dl{overflow: hidden;padding: 0 20px;}
+#area .cate_wrap .gubun{margin-bottom: 14px;}
+#area .cate_wrap .cate{padding-top: 22px;border-top:1px solid #d9d9d9;}
+#area .cate_wrap dt{float: left;width: 130px;}
+#area .cate_wrap dt{margin-right: 68px;padding: 3px 0;border-right: 1px solid #d9d9d9;font-size: 16px;font-weight: bold;color: #333333;}
+#area .cate_wrap dd ul{overflow: hidden;}
+#area .cate_wrap dd li{float: left;width: 170px;margin-bottom: 14px;padding: 3px 0;}
+#area .cate_wrap dd li:nth-child(4), #area .cate_wrap dd li:nth-child(9){width: 200px;}
+#area .cate_wrap dd li a{font-size: 14px;color: #6f6f6f}
+#area .cate_wrap dd li a.active{color: #ec2f2f}
+
+.product_wrap {margin-bottom: 73px;}
+.product_wrap .product_list{width: 1170px;margin: 35px auto 0;border: 1px solid #333333;}
+.product_wrap .product_list > li{width:293px;height: 342px;padding: 20px 45px;border-left: 0;border-right: 1px solid #e0e0e0; }
+.product_wrap .product_list > li:nth-child(4n){border-right: 0;}
+
+
+/* 상품상세 */
+.detail_tit {padding: 0 0 20px 0;}
+.detatil_opt_btn .btn_alert{width: 380px;font-size: 20px;color: #fff;}
+.detail_info_wrap .detail_info{float: none;width: inherit;}
+.detail_info_wrap .detail_info>.tab_area .tab_wrap{width: inherit;}
+.detail_info_wrap .detail_info>.tab_area .tab_wrap .tab_tit{width: inherit;height: 55px; border-bottom: 2px solid #333;}
+
+/*.ibju .faq_txt h4{margin-bottom:5px;font-weight: bold;}
+.ibju dl{overflow: hidden;}
+.ibju dt, .ibju dd{float: left;margin-bottom: 5px;}
+.ibju dt{width: 70px;margin-right: 20px;font-weight: bold;}
+.ibju dd{width: 200px;}
+.ibju .clr_l{clear: left;}*/
+
+.ibju.tred.faq_tbl .faq_open{display: block;}
+.ibju.tred.faq_tbl .faq_txt{margin: 20px -242px -20px -107px}
+.ibju.tred.faq_tbl .faq_txt.sec{margin: 20px -145px -20px -107px;}
+
+
+.ibju_member .acc{overflow: hidden;margin-bottom: 20px}
+.ibju_member .acc dt, .ibju_member .acc dd{display: inline-block;font-size: 20px;}
+.ibju_member .acc dt{font-weight: bold;}
+.ibju_member .list_ul{margin: -5px;border: 1px solid;text-align: center;}
+.ibju_member .list_ul li{position: relative;display: inline-block;margin: 5px;padding: 15px;width: 48.7%;border:1px solid #ddd;border-radius: 5px;text-align: left;}
+.ibju_member .list_ul li strong{font-size: 20px;}
+
+.ibju_member .list_ul .info{overflow: hidden;margin-top: 10px;}
+.ibju_member .list_ul .info dt, .ibju_member .list_ul .info dd{float: left;}
+.ibju_member .list_ul .info dt{clear: left;}
+.ibju_member .banto{display: none;position: absolute;left: 0;right:0;top: 0;bottom: 0;margin: auto;;background: rgba(0,0,0,0.6);line-height: 160px; text-align: center; font-size: 25px;color: #fff;}
+
+
+
+@media  (max-width: 1460px){
+.slide_node .slide_view_prev {left: 20px;}
+.slide_node .slide_view_next{right: 30px}
+.slide_node .slide_cnt {right: 20px;}
+
+}

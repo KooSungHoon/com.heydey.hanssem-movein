@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="http://devmall.hanssem.com/resources/mobile/css/common.css?2018041"> <!-- 공통 CSS -->
+	<link rel="stylesheet" href="http://devmall.hanssem.com/resources/mobile/css/module.css?20180306"> <!-- 공통 CSS -->
+	<link rel="stylesheet" href="http://devmall.hanssem.com/resources/mobile/css/modal.css"> <!-- 공통 CSS -->
+	<link rel="stylesheet" href="http://devmall.hanssem.com/resources/mobile/css/ibju.css"> <!-- 입주전용 CSS -->
+
+<!-- <link rel="stylesheet" type="text/css" href="http://image2.hanssem.com/event/movein/css/mobile_hanssem_product.css"/>-->
+</head>
+<body>
+
+<div id="mansion-content" v-bind:class="isMobile ? 'mobile_wrap': 'pc_wrap'" style="position: relative" v-cloak>
+    <!-- 배너 -->
+    <div id="gate" class="ibju">
+        <!-- 슬라이더  -->
+        <hanssem-slide v-bind:images="current.mainSlide" v-bind:is-mobile="isMobile"
+                       v-bind:is-trigger="!isMobile"></hanssem-slide>
+    </div>
+    <div id="pos1" class="cont">
+        <span v-html="current.title"></span>
+        <strong v-html="current.name"></strong>
+        <p v-html="current.description"></p>
+    </div>
+    <div class="size_tab_wrap">
+        <div class="tab-container">
+            <a href="javascript:void(0);" class="trigger next" v-on:click="nextTab()">
+                <responsive-img v-bind:is-mobile="isMobile"
+                                src="/movein/common/sub_tabs/tab_btn_right.png"></responsive-img>
+            </a>
+            <a href="javascript:void(0);" class="trigger prev" v-on:click="prevTab()">
+                <responsive-img v-bind:is-mobile="isMobile"
+                                src="/movein/common/sub_tabs/tab_btn_left.png"></responsive-img>
+            </a>
+           <hanssem-tab v-for="size in current.sizes"
+                         v-bind:key="size.name"
+                         v-bind:name="size.name"
+                         v-bind:is-active="active === size.name"
+                         v-bind:tab-class="'size_tab ' + size.name"
+                         v-bind:image-path="size.tabImgPath"
+                         v-bind:is-mobile="isMobile"
+                         v-bind:size="100 / current.sizes.length"
+                         v-bind:transform="'translateX('+ -(currentIndex * 100) +'%)'"
+                         v-on:active="setActive"></hanssem-tab>
+        </div>
+    </div>
+    <size-content v-if="active === size.name"
+                  v-for="size in current.sizes"
+                  v-bind:size="size"
+                  v-bind:key="size.name"
+                  v-bind:current="current"
+                  v-bind:content-class="'product_wrap'"></size-content>
+</div>
+<script src="http://image2.hanssem.com/event/movein/js/jquery-1.11.3.min.js"></script>
+<script>
+    window.currentPage = '10000006';
+</script>
+</body>
+</html>
